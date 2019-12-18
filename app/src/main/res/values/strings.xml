@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rocket</string>
+    <string name="cores">Cores:</string>
+    <string name="payloads">Payloads:</string>
+    <string name="serial">Serial</string>
+    <string name="flight">Flight</string>
+    <string name="block">Block</string>
+    <string name="reused">Reused</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="unavailable">N/A</string>
+    
+    <string name="payload_id">Id</string>
+    <string name="payload_type">Type</string>
+    <string name="mass">KG - Lbs</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/mainPage">
+
+    <fragment
+        android:id="@+id/launchDetailsPage"
+        android:name="com.monese.rocket.view.fragments.LaunchDetailsPage"
+        android:label="LaunchDetailsPage"
+        tools:layout="@layout/fragment_launch_details">
+
+        <argument
+            android:name="launch"
+            app:argType="com.monese.rocket.model.models.Launch" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="com.monese.rocket.view.fragments.MainFragment"
+        android:label="MainPage"
+        tools:layout="@layout/fragment_main_page">
+        <action
+            android:id="@+id/detailsPage"
+            app:destination="@id/launchDetailsPage" />
+    </fragment>
+    <activity
+        android:id="@+id/videoPlayerActivity"
+        android:name="com.monese.rocket.view.VideoPlayerActivity"
+        android:label="VideoPlayerActivity" />
+</navigation>
